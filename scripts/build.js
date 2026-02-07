@@ -21,15 +21,28 @@ const kmlPaths = getDefaultKmlPaths(sourceDir);
 const distDir = path.join(rootDir, 'dist');
 const dataDir = path.join(distDir, 'data');
 
-if (!fs.existsSync(mdPath)) {
-  console.error('找不到行程 MD:', mdPath);
-  process.exit(1);
-}
-
 fs.mkdirSync(dataDir, { recursive: true });
 
-const itinerary = parseItineraryMd(mdPath);
-const places = parseKmlFiles(kmlPaths);
+let itinerary;
+let places;
+
+if (fs.existsSync(mdPath)) {
+  itinerary = parseItineraryMd(mdPath);
+  places = parseKmlFiles(kmlPaths);
+  console.log('已從來源讀取行程與地點資料');
+} else {
+  console.warn('找不到行程 MD (' + mdPath + ')，使用空白資料（建置仍會成功，例如在 Vercel 上）');
+  itinerary = {
+    title: '行程',
+    flights: [],
+    hotel: null,
+    reservedRestaurants: [],
+    placesFromMd: [],
+    days: [],
+    routes: { A: { title: '', rows: [] }, B: { title: '', rows: [] }, C: { title: '', rows: [] } },
+  };
+  places = [];
+}
 
 fs.writeFileSync(path.join(dataDir, 'itinerary.json'), JSON.stringify(itinerary, null, 2), 'utf8');
 fs.writeFileSync(path.join(dataDir, 'places.json'), JSON.stringify(places, null, 2), 'utf8');

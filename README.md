@@ -36,6 +36,8 @@ npm run build:single
 
 將 `dist/` 部署到 Vercel、Netlify 或 GitHub Pages。手機開該網址，首次載入後 PWA 會快取，之後可離線瀏覽。
 
+**Vercel / 從 GitHub 部署**：建置機沒有你的行程檔（如 `C:\TH`），`npm run build` 會改為輸出空白資料，建置會通過、網站可開但內容為空。若要線上顯示**真實行程**：在本機設好 `TRIP_SOURCE` 並執行 `npm run build`，再將整個 `dist` 資料夾部署（例如 Vercel 專案設 Output Directory 為 `dist`，並改為本機 `vercel` 部署該資料夾）。
+
 ### 方式二：單檔傳到手機
 
 1. 執行 `npm run build:single`。
@@ -62,14 +64,31 @@ trip-viewer/
 └── README.md
 ```
 
-## 版控
+## 上傳到 GitHub
 
-本專案為獨立 repo，可單獨 `git init` 與推送到自己的遠端。
+1. **在 GitHub 建立新 repo**
+   - 到 [github.com/new](https://github.com/new)
+   - Repository name 填 `trip-viewer`（或自訂）
+   - 不要勾選 "Add a README"（本地已有）
+   - 建立後記下 repo 網址，例如：`https://github.com/你的帳號/trip-viewer.git`
+
+2. **在本機連線並推送**
+   - 在專案目錄 `c:\trip-viewer` 執行（請把下面網址改成你的 repo）：
 
 ```bash
-git init
-git add .
-git commit -m "Initial trip-viewer"
+cd c:\trip-viewer
+git remote add origin https://github.com/你的帳號/trip-viewer.git
+git push -u origin main
 ```
 
-若行程來源（如 `C:\TH`）不在本 repo，請勿加入版控；僅建置產物與程式碼納入版控即可。
+   - 若已加過 `origin`，可先刪除再加：`git remote remove origin`
+   - 推送時會要求登入 GitHub（或使用 Personal Access Token／SSH）。
+
+3. **之後若要更新並再推**
+```bash
+git add .
+git commit -m "更新說明"
+git push
+```
+
+若行程來源（如 `C:\TH`）不在本 repo，請勿加入版控；僅程式碼與 README 納入版控即可。`dist/` 已在 `.gitignore`，不會被推送。
