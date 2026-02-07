@@ -42,7 +42,7 @@ function parsePlacemark(pm, category, index) {
       lat = parseFloat(coord[1]);
     }
   }
-  const googleMapsUrl = extractFirstGoogleMapsUrl(descText) || coordsToGoogleMapsUrl(lat, lng);
+  const googleMapsUrl = extractFirstGoogleMapsUrl(descText) || coordsToGoogleMapsUrl(lng, lat);
   return {
     id: `kml-${category}-${index}`,
     name: name.trim() || '未命名',

@@ -18,6 +18,45 @@
     if (url) window.open(url, '_blank', 'noopener');
   }
 
+  function buildNameToUrl() {
+    var map = {};
+    function add(name, url) {
+      var t = name && name.trim();
+      if (t && url) map[t] = url;
+      var noPrefix = t && t.replace(/^\[[ABC]\]\s*/, '');
+      if (noPrefix && noPrefix !== t) map[noPrefix] = url;
+    }
+    (data.places || []).forEach(function (p) { add(p.name, p.googleMapsUrl); });
+    (data.itinerary && data.itinerary.placesFromMd || []).forEach(function (p) { add(p.name, p.googleMapsUrl); });
+    return map;
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function escapeRegex(s) {
+    return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function linkifyPlaceNames(text, nameToUrl) {
+    if (!text || !nameToUrl) return escapeHtml(text);
+    var safe = escapeHtml(text);
+    var names = Object.keys(nameToUrl).filter(function (n) { return n.length >= 2; });
+    names.sort(function (a, b) { return b.length - a.length; });
+    names.forEach(function (name) {
+      var url = nameToUrl[name];
+      var re = new RegExp(escapeRegex(name), 'g');
+      safe = safe.replace(re, '<a href="' + url.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener" class="place-link">$&</a>');
+    });
+    return safe;
+  }
+
   function renderTitle() {
     if (!data.itinerary) return;
     var el = document.getElementById('title');
@@ -60,9 +99,10 @@
       container.innerHTML = '';
       return;
     }
+    var nameToUrl = buildNameToUrl();
     var html = '<h2>Day ' + day + '（' + (d.date || '') + '）</h2><p class="day-title">' + (d.title || '') + '</p><table class="day-table"><thead><tr><th>時段</th><th>行程</th><th>備註</th></tr></thead><tbody>';
     (d.slots || []).forEach(function (s) {
-      html += '<tr><td>' + (s.time || '') + '</td><td>' + (s.activity || '') + '</td><td>' + (s.note || '') + '</td></tr>';
+      html += '<tr><td>' + escapeHtml(s.time || '') + '</td><td>' + linkifyPlaceNames(s.activity || '', nameToUrl) + '</td><td>' + linkifyPlaceNames(s.note || '', nameToUrl) + '</td></tr>';
     });
     html += '</tbody></table>';
     container.innerHTML = html;
@@ -76,9 +116,10 @@
       container.innerHTML = '';
       return;
     }
+    var nameToUrl = buildNameToUrl();
     var html = '<h2>路線 ' + state.route + '：' + (r.title || '') + '</h2><table class="route-table"><thead><tr><th>日</th><th>時段</th><th>行程</th><th>店家／備註</th></tr></thead><tbody>';
     (r.rows || []).forEach(function (row) {
-      html += '<tr><td>' + (row['日'] || '') + '</td><td>' + (row['時段'] || '') + '</td><td>' + (row['行程'] || '') + '</td><td>' + (row['店家／備註'] || '') + '</td></tr>';
+      html += '<tr><td>' + escapeHtml(row['日'] || '') + '</td><td>' + escapeHtml(row['時段'] || '') + '</td><td>' + linkifyPlaceNames(row['行程'] || '', nameToUrl) + '</td><td>' + linkifyPlaceNames(row['店家／備註'] || '', nameToUrl) + '</td></tr>';
     });
     html += '</tbody></table>';
     container.innerHTML = html;

@@ -234,6 +234,15 @@ body {
   transform: scale(0.98);
 }
 
+.place-link {
+  color: #7eb8da;
+  text-decoration: underline;
+}
+
+.place-link:hover {
+  color: #9dd;
+}
+
 @media (min-width: 480px) {
   #app {
     padding: 0 20px 32px;

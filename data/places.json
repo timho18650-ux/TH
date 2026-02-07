@@ -6,7 +6,7 @@
     "lat": 13.7388,
     "lng": 100.5601,
     "description": "入住 2/26-3/1，Deluxe Room 含早 介紹連結： 繁中－Booking | 簡中－Booking | EN－TripAdvisor",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5601,13.7388"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7388,100.5601"
   },
   {
     "id": "kml-酒店與餐廳-1",
@@ -33,7 +33,7 @@
     "lat": 13.728,
     "lng": 100.569,
     "description": "Addict、Doki Doki、Momo、Paradise 介紹連結： 繁中－風俗攻略 | EN－Addict 介紹",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.569,13.728"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.728,100.569"
   },
   {
     "id": "kml-日按與Soapy-4",
@@ -42,7 +42,7 @@
     "lat": 13.725,
     "lng": 100.572,
     "description": "102、Bamboo、Angel、Pretty 介紹連結： 繁中－風俗攻略 | EN－Bamboo 介紹",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.572,13.725"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.725,100.572"
   },
   {
     "id": "kml-日按與Soapy-5",
@@ -51,7 +51,7 @@
     "lat": 13.742,
     "lng": 100.5535,
     "description": "幻想服務、雙飛聞名；12:30-24:00，周一休息 介紹連結： 繁中／EN－Eden 攻略 | EN－TripAdvisor",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5535,13.742"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.742,100.5535"
   },
   {
     "id": "kml-日按與Soapy-6",
@@ -60,7 +60,7 @@
     "lat": 13.736,
     "lng": 100.548,
     "description": "老牌，約 4,500–6,000 銖，外國人加 500 介紹連結： 繁中－泰浴攻略 | 簡中－Emmanuelle 介紹 | EN－Hammer104",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.548,13.736"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.736,100.548"
   },
   {
     "id": "kml-日按與Soapy-7",
@@ -69,7 +69,7 @@
     "lat": 13.773,
     "lng": 100.5715,
     "description": "分級選妃，約 3,500–8,000 銖，Sutthisan MRT 介紹連結： 繁中－Poseidon 波賽頓介紹 | 簡中－Poseidon 傳奇泰浴 | EN－Poseidon 詳情",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5715,13.773"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.773,100.5715"
   },
   {
     "id": "kml-日按與Soapy-8",
@@ -78,7 +78,7 @@
     "lat": 13.774,
     "lng": 100.572,
     "description": "中高檔，約 4,500–10,000 銖，出發前建議確認營業 介紹連結： 繁中－泰浴攻略 | 簡中－曼谷泰浴指南 | EN－The Lord 介紹",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.572,13.774"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.774,100.572"
   },
   {
     "id": "kml-紅燈區-9",
@@ -87,7 +87,7 @@
     "lat": 13.7325,
     "lng": 100.561,
     "description": "短巷、觀光氣氛較重，約 20 間 Go Go Bar 介紹連結： 繁中－牛仔巷攻略 | 簡中－紅燈區指南 | EN－Bangkok 紅燈區",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.561,13.7325"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7325,100.561"
   },
   {
     "id": "kml-紅燈區-10",
@@ -96,7 +96,7 @@
     "lat": 13.741,
     "lng": 100.5532,
     "description": "三層樓複合式 Gogo Bar，高能量氛圍 介紹連結： 繁中－風俗攻略 | 簡中－曼谷夜生活 | EN－Nana Plaza 指南",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5532,13.741"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.741,100.5532"
   },
   {
     "id": "kml-紅燈區-11",
@@ -105,7 +105,7 @@
     "lat": 13.7285,
     "lng": 100.5315,
     "description": "夜市＋酒吧並存，謹防宰客與盜版攤 介紹連結： 繁中－風俗攻略 | 簡中－紅燈區指南 | EN－Gogo Bars 攻略",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5315,13.7285"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7285,100.5315"
   },
   {
     "id": "kml-景點-12",
@@ -114,7 +114,7 @@
     "lat": 13.75,
     "lng": 100.4915,
     "description": "門票 500 銖，08:30–15:30 介紹連結： 繁中－維基百科 | 簡中－官網 | EN－官網",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4915,13.75"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.75,100.4915"
   },
   {
     "id": "kml-景點-13",
@@ -123,7 +123,7 @@
     "lat": 13.7465,
     "lng": 100.4925,
     "description": "門票 300 銖，08:00–19:30，距大皇宮約 700m 介紹連結： 繁中－維基百科 | 簡中－攜程攻略 | EN－TripAdvisor",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4925,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.4925"
   },
   {
     "id": "kml-景點-14",
@@ -132,7 +132,7 @@
     "lat": 13.7265,
     "lng": 100.512,
     "description": "免費入場，10:00–22:00，河畔 10 層商場 介紹連結： 繁中－維基百科 | 簡中－官網 | EN－官網",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.512,13.7265"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7265,100.512"
   },
   {
     "id": "kml-他人推薦（日按Soapy俱樂部）-15",
@@ -312,7 +312,7 @@
     "lat": 13.7388,
     "lng": 100.5601,
     "description": "入住飯店",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5601,13.7388"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7388,100.5601"
   },
   {
     "id": "kml-路線A－高評分路線-1",
@@ -321,7 +321,7 @@
     "lat": 13.75,
     "lng": 100.4915,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4915,13.75"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.75,100.4915"
   },
   {
     "id": "kml-路線A－高評分路線-2",
@@ -330,7 +330,7 @@
     "lat": 13.7465,
     "lng": 100.4925,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4925,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.4925"
   },
   {
     "id": "kml-路線A－高評分路線-3",
@@ -339,7 +339,7 @@
     "lat": 13.7265,
     "lng": 100.512,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.512,13.7265"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7265,100.512"
   },
   {
     "id": "kml-路線A－高評分路線-4",
@@ -348,7 +348,7 @@
     "lat": 13.7465,
     "lng": 100.5405,
     "description": "Day 1 19:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5405,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.5405"
   },
   {
     "id": "kml-路線A－高評分路線-5",
@@ -357,7 +357,7 @@
     "lat": 13.775,
     "lng": 100.51,
     "description": "Day 2 12:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.51,13.775"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.775,100.51"
   },
   {
     "id": "kml-路線A－高評分路線-6",
@@ -366,7 +366,7 @@
     "lat": 13.741,
     "lng": 100.5532,
     "description": "Day 1 晚上、Day 3 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5532,13.741"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.741,100.5532"
   },
   {
     "id": "kml-路線A－高評分路線-7",
@@ -375,7 +375,7 @@
     "lat": 13.731,
     "lng": 100.562,
     "description": "Day 2 上午 4.8★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.562,13.731"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.731,100.562"
   },
   {
     "id": "kml-路線A－高評分路線-8",
@@ -384,7 +384,7 @@
     "lat": 13.73,
     "lng": 100.565,
     "description": "Day 2 上午 4.7★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.565,13.73"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.73,100.565"
   },
   {
     "id": "kml-路線A－高評分路線-9",
@@ -393,7 +393,7 @@
     "lat": 13.727,
     "lng": 100.57,
     "description": "Day 2 傍晚 4.7★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.57,13.727"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.727,100.57"
   },
   {
     "id": "kml-路線A－高評分路線-10",
@@ -402,7 +402,7 @@
     "lat": 13.732,
     "lng": 100.565,
     "description": "Day 2 傍晚 4.7★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.565,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.565"
   },
   {
     "id": "kml-路線A－高評分路線-11",
@@ -411,7 +411,7 @@
     "lat": 13.7325,
     "lng": 100.561,
     "description": "Day 2 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.561,13.7325"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7325,100.561"
   },
   {
     "id": "kml-路線A－高評分路線-12",
@@ -420,7 +420,7 @@
     "lat": 13.732,
     "lng": 100.561,
     "description": "Day 2 晚上 4.3★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.561,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.561"
   },
   {
     "id": "kml-路線A－高評分路線-13",
@@ -429,7 +429,7 @@
     "lat": 13.778,
     "lng": 100.601,
     "description": "Day 3 上午 4.8★ RCA",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.601,13.778"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.778,100.601"
   },
   {
     "id": "kml-路線A－高評分路線-14",
@@ -438,7 +438,7 @@
     "lat": 13.728,
     "lng": 100.575,
     "description": "Day 4 上午 4.6★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.575,13.728"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.728,100.575"
   },
   {
     "id": "kml-路線A－高評分路線-15",
@@ -447,7 +447,7 @@
     "lat": 13.73,
     "lng": 100.563,
     "description": "Day 4 上午 4.3★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.563,13.73"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.73,100.563"
   },
   {
     "id": "kml-路線B－性價比路線-16",
@@ -456,7 +456,7 @@
     "lat": 13.7388,
     "lng": 100.5601,
     "description": "入住飯店",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5601,13.7388"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7388,100.5601"
   },
   {
     "id": "kml-路線B－性價比路線-17",
@@ -465,7 +465,7 @@
     "lat": 13.75,
     "lng": 100.4915,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4915,13.75"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.75,100.4915"
   },
   {
     "id": "kml-路線B－性價比路線-18",
@@ -474,7 +474,7 @@
     "lat": 13.7465,
     "lng": 100.4925,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4925,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.4925"
   },
   {
     "id": "kml-路線B－性價比路線-19",
@@ -483,7 +483,7 @@
     "lat": 13.7265,
     "lng": 100.512,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.512,13.7265"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7265,100.512"
   },
   {
     "id": "kml-路線B－性價比路線-20",
@@ -492,7 +492,7 @@
     "lat": 13.7465,
     "lng": 100.5405,
     "description": "Day 1 19:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5405,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.5405"
   },
   {
     "id": "kml-路線B－性價比路線-21",
@@ -501,7 +501,7 @@
     "lat": 13.775,
     "lng": 100.51,
     "description": "Day 2 12:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.51,13.775"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.775,100.51"
   },
   {
     "id": "kml-路線B－性價比路線-22",
@@ -510,7 +510,7 @@
     "lat": 13.7325,
     "lng": 100.561,
     "description": "Day 1 晚上、Day 3 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.561,13.7325"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7325,100.561"
   },
   {
     "id": "kml-路線B－性價比路線-23",
@@ -519,7 +519,7 @@
     "lat": 13.741,
     "lng": 100.5532,
     "description": "Day 2 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5532,13.741"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.741,100.5532"
   },
   {
     "id": "kml-路線B－性價比路線-24",
@@ -528,7 +528,7 @@
     "lat": 13.732,
     "lng": 100.558,
     "description": "Day 2 上午 約 3,000 銖",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.558,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.558"
   },
   {
     "id": "kml-路線B－性價比路線-25",
@@ -537,7 +537,7 @@
     "lat": 13.735,
     "lng": 100.557,
     "description": "Day 2 上午 2,000 銖起",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.557,13.735"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.735,100.557"
   },
   {
     "id": "kml-路線B－性價比路線-26",
@@ -546,7 +546,7 @@
     "lat": 13.732,
     "lng": 100.565,
     "description": "Day 2 傍晚 1,900 銖起",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.565,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.565"
   },
   {
     "id": "kml-路線B－性價比路線-27",
@@ -555,7 +555,7 @@
     "lat": 13.728,
     "lng": 100.569,
     "description": "Day 2 傍晚 Soi 24",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.569,13.728"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.728,100.569"
   },
   {
     "id": "kml-路線B－性價比路線-28",
@@ -564,7 +564,7 @@
     "lat": 13.737,
     "lng": 100.56,
     "description": "Day 2 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.56,13.737"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.737,100.56"
   },
   {
     "id": "kml-路線B－性價比路線-29",
@@ -573,7 +573,7 @@
     "lat": 13.729,
     "lng": 100.564,
     "description": "Day 3 上午 4.3★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.564,13.729"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.729,100.564"
   },
   {
     "id": "kml-路線B－性價比路線-30",
@@ -582,7 +582,7 @@
     "lat": 13.732,
     "lng": 100.565,
     "description": "Day 3 上午 4.4★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.565,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.565"
   },
   {
     "id": "kml-路線B－性價比路線-31",
@@ -591,7 +591,7 @@
     "lat": 13.734,
     "lng": 100.56,
     "description": "Day 4 上午 4.6★",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.56,13.734"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.734,100.56"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-32",
@@ -600,7 +600,7 @@
     "lat": 13.7388,
     "lng": 100.5601,
     "description": "入住飯店",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5601,13.7388"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7388,100.5601"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-33",
@@ -609,7 +609,7 @@
     "lat": 13.75,
     "lng": 100.4915,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4915,13.75"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.75,100.4915"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-34",
@@ -618,7 +618,7 @@
     "lat": 13.7465,
     "lng": 100.4925,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.4925,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.4925"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-35",
@@ -627,7 +627,7 @@
     "lat": 13.7265,
     "lng": 100.512,
     "description": "Day 1 下午",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.512,13.7265"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7265,100.512"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-36",
@@ -636,7 +636,7 @@
     "lat": 13.7465,
     "lng": 100.5405,
     "description": "Day 1 19:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5405,13.7465"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.5405"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-37",
@@ -645,7 +645,7 @@
     "lat": 13.775,
     "lng": 100.51,
     "description": "Day 2 12:30 已預訂",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.51,13.775"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.775,100.51"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-38",
@@ -654,7 +654,7 @@
     "lat": 13.741,
     "lng": 100.5532,
     "description": "Day 1、2、3 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5532,13.741"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.741,100.5532"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-39",
@@ -663,7 +663,7 @@
     "lat": 13.773,
     "lng": 100.571,
     "description": "Day 2 上午 4.3★ Soapy",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.571,13.773"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.773,100.571"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-40",
@@ -672,7 +672,7 @@
     "lat": 13.773,
     "lng": 100.5715,
     "description": "Day 2 上午 Soapy",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.5715,13.773"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.773,100.5715"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-41",
@@ -681,7 +681,7 @@
     "lat": 13.735,
     "lng": 100.557,
     "description": "Day 2 傍晚 主題房",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.557,13.735"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.735,100.557"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-42",
@@ -690,7 +690,7 @@
     "lat": 13.73,
     "lng": 100.565,
     "description": "Day 3 上午 情境房",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.565,13.73"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.73,100.565"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-43",
@@ -699,7 +699,7 @@
     "lat": 13.728,
     "lng": 100.575,
     "description": "Day 3 上午 Sky 房",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.575,13.728"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.728,100.575"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-44",
@@ -708,7 +708,7 @@
     "lat": 13.732,
     "lng": 100.561,
     "description": "Day 3 晚上",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.561,13.732"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.732,100.561"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-45",
@@ -717,7 +717,7 @@
     "lat": 13.774,
     "lng": 100.572,
     "description": "Day 4 上午 Soapy 會員制",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.572,13.774"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.774,100.572"
   },
   {
     "id": "kml-路線C－Soapy高檔路線-46",
@@ -726,6 +726,6 @@
     "lat": 13.736,
     "lng": 100.548,
     "description": "Day 4 上午 Soapy",
-    "googleMapsUrl": "https://www.google.com/maps?q=100.548,13.736"
+    "googleMapsUrl": "https://www.google.com/maps?q=13.736,100.548"
   }
 ]
