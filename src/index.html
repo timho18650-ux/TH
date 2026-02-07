@@ -15,8 +15,13 @@
       <button type="button" class="btn-maps" id="retry-btn">重試</button>
     </div>
     <header class="header" id="app-header" hidden>
-      <h1 id="title">行程</h1>
-      <p id="subtitle" class="subtitle"></p>
+      <div class="header-row">
+        <div>
+          <h1 id="title">行程</h1>
+          <p id="subtitle" class="subtitle"></p>
+        </div>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切換深色／淺色" title="切換主題">☀</button>
+      </div>
     </header>
 
     <div id="app-body" hidden>
@@ -34,17 +39,10 @@
       <button type="button" class="tab" data-day="4" role="tab">Day 4</button>
     </nav>
 
-    <nav class="tabs route-tabs" role="tablist" aria-label="路線">
-      <button type="button" class="tab route-tab" data-route="A" role="tab">路線 A</button>
-      <button type="button" class="tab route-tab" data-route="B" role="tab">路線 B</button>
-      <button type="button" class="tab route-tab" data-route="C" role="tab">路線 C</button>
-    </nav>
-
     <section class="reserved" id="reserved" aria-label="已預訂"></section>
 
     <section class="content">
       <div id="day-content"></div>
-      <div id="route-content"></div>
       <div id="places-section">
         <h2>地點</h2>
         <div id="places-filters"></div>
@@ -58,6 +56,7 @@
     </section>
     </div>
   </div>
+  <button type="button" id="back-to-top" class="back-to-top" hidden aria-label="回到頂部">↑</button>
   <script src="app.js"></script>
 </body>
 </html>

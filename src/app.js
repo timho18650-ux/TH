@@ -11,7 +11,7 @@
     });
   }
 
-  var state = { day: 0, route: 'A', placeCategory: '', mainView: 'itinerary' };
+  var state = { day: 0, placeCategory: '', placeSearch: '', mainView: 'itinerary' };
   var data = { itinerary: null, places: [] };
 
   function openMaps(url) {
@@ -90,11 +90,30 @@
     var container = document.getElementById('day-content');
     if (!container || !data.itinerary) return;
     var day = state.day;
+    var days = data.itinerary.days || [];
     if (day === 0) {
-      container.innerHTML = '<p class="hint">請選擇 Day 1–4 查看當日行程。</p>';
+      if (!days.length) {
+        container.innerHTML = '<p class="hint">請選擇 Day 1–4 查看當日行程。</p>';
+        return;
+      }
+      var html = '<p class="hint">點選下方區塊查看該日詳情。</p><div class="day-summary-list">';
+      days.forEach(function (d) {
+        var firstSlots = (d.slots || []).slice(0, 2);
+        var summary = firstSlots.map(function (s) { return s.activity || s.time || ''; }).filter(Boolean).join('、') || '查看詳情';
+        html += '<button type="button" class="day-summary-block" data-day="' + d.day + '">';
+        html += '<span class="day-summary-title">Day ' + d.day + '（' + (d.date || '') + '）</span>';
+        html += '<span class="day-summary-sub">' + (d.title || '') + '</span>';
+        html += '<span class="day-summary-preview">' + escapeHtml(summary) + '</span>';
+        html += '</button>';
+      });
+      html += '</div>';
+      container.innerHTML = html;
+      container.querySelectorAll('.day-summary-block').forEach(function (btn) {
+        btn.addEventListener('click', function () { setDay(parseInt(btn.getAttribute('data-day'), 10)); });
+      });
       return;
     }
-    var d = data.itinerary.days && data.itinerary.days.find(function (x) { return x.day === day; });
+    var d = days.find(function (x) { return x.day === day; });
     if (!d) {
       container.innerHTML = '';
       return;
@@ -103,23 +122,6 @@
     var html = '<h2>Day ' + day + '（' + (d.date || '') + '）</h2><p class="day-title">' + (d.title || '') + '</p><table class="day-table"><thead><tr><th>時段</th><th>行程</th><th>備註</th></tr></thead><tbody>';
     (d.slots || []).forEach(function (s) {
       html += '<tr><td>' + escapeHtml(s.time || '') + '</td><td>' + linkifyPlaceNames(s.activity || '', nameToUrl) + '</td><td>' + linkifyPlaceNames(s.note || '', nameToUrl) + '</td></tr>';
-    });
-    html += '</tbody></table>';
-    container.innerHTML = html;
-  }
-
-  function renderRouteContent() {
-    var container = document.getElementById('route-content');
-    if (!container || !data.itinerary) return;
-    var r = data.itinerary.routes && data.itinerary.routes[state.route];
-    if (!r) {
-      container.innerHTML = '';
-      return;
-    }
-    var nameToUrl = buildNameToUrl();
-    var html = '<h2>路線 ' + state.route + '：' + (r.title || '') + '</h2><table class="route-table"><thead><tr><th>日</th><th>時段</th><th>行程</th><th>店家／備註</th></tr></thead><tbody>';
-    (r.rows || []).forEach(function (row) {
-      html += '<tr><td>' + escapeHtml(row['日'] || '') + '</td><td>' + escapeHtml(row['時段'] || '') + '</td><td>' + linkifyPlaceNames(row['行程'] || '', nameToUrl) + '</td><td>' + linkifyPlaceNames(row['店家／備註'] || '', nameToUrl) + '</td></tr>';
     });
     html += '</tbody></table>';
     container.innerHTML = html;
@@ -136,13 +138,25 @@
     var filters = document.getElementById('places-filters');
     if (!list || !data.places) return;
     var categories = getPlaceCategories();
-    if (filters && categories.length) {
-      filters.innerHTML = '<label>分類：</label><select id="place-category"><option value="">全部</option>' +
-        categories.map(function (c) { return '<option value="' + c + '">' + c + '</option>'; }).join('') + '</select>';
-      filters.querySelector('select').addEventListener('change', function () {
-        state.placeCategory = this.value;
-        renderPlacesList();
-      });
+    if (filters) {
+      filters.innerHTML = '<input type="search" id="place-search" class="place-search" placeholder="搜尋地點或分類" aria-label="搜尋地點或分類" />' +
+        (categories.length ? '<label>分類：</label><select id="place-category"><option value="">全部</option>' +
+          categories.map(function (c) { return '<option value="' + c + '">' + c + '</option>'; }).join('') + '</select>' : '');
+      var searchEl = document.getElementById('place-search');
+      if (searchEl) {
+        searchEl.value = state.placeSearch || '';
+        searchEl.addEventListener('input', function () {
+          state.placeSearch = this.value.trim();
+          renderPlacesList();
+        });
+      }
+      var selectEl = filters.querySelector('select');
+      if (selectEl) {
+        selectEl.addEventListener('change', function () {
+          state.placeCategory = this.value;
+          renderPlacesList();
+        });
+      }
     }
     state.placeCategory = state.placeCategory || '';
     renderPlacesList();
@@ -151,8 +165,11 @@
   function renderPlacesList() {
     var list = document.getElementById('places-list');
     if (!list) return;
+    var q = (state.placeSearch || '').toLowerCase();
     var items = data.places.filter(function (p) {
-      return !state.placeCategory || p.category === state.placeCategory;
+      var catMatch = !state.placeCategory || p.category === state.placeCategory;
+      var searchMatch = !q || (p.name && p.name.toLowerCase().indexOf(q) !== -1) || (p.category && p.category.toLowerCase().indexOf(q) !== -1) || (p.description && p.description.toLowerCase().indexOf(q) !== -1);
+      return catMatch && searchMatch;
     });
     list.innerHTML = items.map(function (p) {
       var url = p.googleMapsUrl || ('https://www.google.com/maps?q=' + (p.lat && p.lng ? p.lat + ',' + p.lng : encodeURIComponent(p.name)));
@@ -173,14 +190,6 @@
       t.classList.toggle('active', t.getAttribute('data-day') === String(n));
     });
     renderDayContent();
-  }
-
-  function setRoute(r) {
-    state.route = r;
-    document.querySelectorAll('.route-tabs .tab').forEach(function (t) {
-      t.classList.toggle('active', t.getAttribute('data-route') === r);
-    });
-    renderRouteContent();
   }
 
   function renderGuides() {
@@ -237,16 +246,39 @@
     if (body) body.hidden = false;
   }
 
+  function applyTheme(theme) {
+    var root = document.documentElement;
+    root.setAttribute('data-theme', theme || 'dark');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'light' ? '#f0f0f5' : '#1a1a2e');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'light' ? '🌙' : '☀';
+  }
+
+  function initTheme() {
+    var saved = localStorage.getItem('trip-theme');
+    applyTheme(saved === 'light' ? 'light' : 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var root = document.documentElement;
+        var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        localStorage.setItem('trip-theme', next);
+        applyTheme(next);
+      });
+    }
+  }
+
   function doRender() {
     renderTitle();
     renderReserved();
     renderDayContent();
-    renderRouteContent();
     renderPlaces();
     renderGuides();
   }
 
   function init() {
+    initTheme();
     if (window.__TRIP_DATA__) {
       setContentVisible();
       data.itinerary = window.__TRIP_DATA__.itinerary;
@@ -289,13 +321,21 @@
     document.querySelectorAll('.day-tabs .tab').forEach(function (btn) {
       btn.addEventListener('click', function () { setDay(parseInt(btn.getAttribute('data-day'), 10)); });
     });
-    document.querySelectorAll('.route-tabs .tab').forEach(function (btn) {
-      btn.addEventListener('click', function () { setRoute(btn.getAttribute('data-route')); });
-    });
-
     setDay(0);
-    setRoute('A');
     setMainView('itinerary');
+
+    var backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      var scrollThreshold = 300;
+      function onScroll() {
+        backToTop.hidden = window.scrollY <= scrollThreshold;
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   }
 
   if ('serviceWorker' in navigator) {
