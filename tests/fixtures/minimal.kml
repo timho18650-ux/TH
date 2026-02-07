@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Folder>
+      <name>1_測試分類</name>
+      <Placemark>
+        <name>測試地點</name>
+        <description><![CDATA[<a href="https://www.google.com/maps/search/Test+Place">Google Maps</a>]]></description>
+        <Point><coordinates>100.5,13.7,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

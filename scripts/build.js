@@ -30,16 +30,28 @@ let itinerary;
 let places;
 
 if (fs.existsSync(mdPath)) {
-  itinerary = parseItineraryMd(mdPath);
-  places = parseKmlFiles(kmlPaths);
+  try {
+    itinerary = parseItineraryMd(mdPath);
+    places = parseKmlFiles(kmlPaths);
+  } catch (err) {
+    console.error('解析失敗:', err.message);
+    console.error('  MD:', mdPath);
+    console.error('  KML:', kmlPaths.join(', '));
+    process.exit(1);
+  }
   console.log('已從來源讀取行程與地點資料');
   fs.mkdirSync(repoDataDir, { recursive: true });
   fs.writeFileSync(repoItineraryPath, JSON.stringify(itinerary, null, 2), 'utf8');
   fs.writeFileSync(repoPlacesPath, JSON.stringify(places, null, 2), 'utf8');
   console.log('已寫入 data/（可 commit 後讓 Vercel 顯示真實行程）');
 } else if (fs.existsSync(repoItineraryPath) && fs.existsSync(repoPlacesPath)) {
-  itinerary = JSON.parse(fs.readFileSync(repoItineraryPath, 'utf8'));
-  places = JSON.parse(fs.readFileSync(repoPlacesPath, 'utf8'));
+  try {
+    itinerary = JSON.parse(fs.readFileSync(repoItineraryPath, 'utf8'));
+    places = JSON.parse(fs.readFileSync(repoPlacesPath, 'utf8'));
+  } catch (err) {
+    console.error('讀取 data/*.json 失敗:', err.message);
+    process.exit(1);
+  }
   console.log('已從 repo data/ 讀取行程與地點（無本機來源時使用）');
 } else {
   console.warn('找不到行程 MD (' + mdPath + ') 且無 data/*.json，使用空白資料');

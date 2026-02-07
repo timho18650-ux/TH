@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.js",
-    "build:single": "node scripts/build.js --single"
+    "build:single": "node scripts/build.js --single",
+    "test": "node --test tests/parse-md.test.js tests/parse-kml.test.js"
   },
   "dependencies": {
     "fast-xml-parser": "^4.3.2",

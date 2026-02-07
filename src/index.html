@@ -9,11 +9,17 @@
 </head>
 <body>
   <div id="app">
-    <header class="header">
+    <p id="loading" class="loading-msg" aria-live="polite">載入行程中…</p>
+    <div id="error" class="error-panel" hidden aria-live="assertive">
+      <p>無法載入行程資料。</p>
+      <button type="button" class="btn-maps" id="retry-btn">重試</button>
+    </div>
+    <header class="header" id="app-header" hidden>
       <h1 id="title">行程</h1>
       <p id="subtitle" class="subtitle"></p>
     </header>
 
+    <div id="app-body" hidden>
     <nav class="tabs main-tabs" role="tablist" aria-label="主分頁">
       <button type="button" class="tab main-tab active" data-main="itinerary" role="tab" aria-selected="true">行程</button>
       <button type="button" class="tab main-tab" data-main="guides" role="tab">心得／備忘</button>
@@ -50,6 +56,7 @@
     <section id="guides-content" class="guides-panel" hidden aria-label="心得備忘">
       <div id="guides-list"></div>
     </section>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>

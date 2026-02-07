@@ -1,0 +1,35 @@
+---
+description: Trip Viewer 行程解析與建置約定：MD/KML 格式、itinerary/places JSON schema
+globs: scripts/parse-md.js,scripts/parse-kml.js,scripts/build.js
+alwaysApply: false
+---
+
+# 解析與建置約定
+
+## Markdown 區段與表格
+
+- 區段以 `## ` 開頭分塊；parse-md 依標題識別：`## 航班日程`、`## 酒店`、`## 行程地圖`、`### 酒店`／`### 日按區`／`### 紅燈區`／`### Soapy`／`### 已預訂餐廳`／`### 景點`／`### 安全套...`、`## 已預訂餐廳`、`### 路線 A：`／`B`／`C`、`## Day 1（2/26）`～`Day 4（3/1）`。
+- 表格為 GFM 管線格式，分隔行 `|---|`；儲存格 trim、去掉 `**`、多空格壓成單空格。
+- 心得章節（guides）標題由 `GUIDE_SECTION_TITLES` 決定，內容用 marked 轉 HTML。
+
+## KML 結構
+
+- 根：`kml.Document`；分類用 `Folder`（`name` 去掉前綴 `\d+_` 當 category）。
+- 點位：`Placemark`，`name`、`description`（可 CDATA）、`Point.coordinates`（經度,緯度[,高度]，
+  空格或逗號分隔）。
+- description 內首個 `href="...google.com/maps..."` 或 `goo.gl/maps` 作為 googleMapsUrl；否則用座標建 `https://www.google.com/maps?q=lat,lng`。
+
+## itinerary.json 欄位
+
+- `title`, `flights[]`（direction, date, flight, depart, arrive）, `hotel`（name, checkIn, checkOut, roomType）, `reservedRestaurants[]`（date, time, name, note）, `placesFromMd[]`（name, category, reservedTime, googleMapsUrl）, `days[]`（day, date, title, slots[]（time, activity, note））, `routes.A|B|C`（title, rows[]（日, 時段, 行程, 店家／備註））, `guides[]`（id, title, html）.
+
+## places.json 欄位
+
+- 陣列，每項：`id`, `name`, `category`, `lat`, `lng`, `description`（stripHtml 前 200 字）, `googleMapsUrl`.
+
+## 建置流程
+
+- 來源目錄：`process.env.TRIP_SOURCE` 或預設 `C:\TH`。
+- MD 路徑：`曼谷成人行程規劃.md`；KML 由 `getDefaultKmlPaths(sourceDir)` 回傳（目前為 `地圖_1_基礎.kml`、`地圖_2_三條路線.kml`）。
+- 有 MD 則 parse 並寫入 `data/` 與 `dist/data/`；無 MD 則讀 repo `data/itinerary.json`、`data/places.json`。
+- `--single` 時將 itinerary、places 內嵌至 `dist/trip-offline.html`，並內嵌 app.js、style.css。

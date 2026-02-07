@@ -1,0 +1,34 @@
+---
+description: Trip Viewer 前端 UI／UX 約定：手機優先、觸控、載入與錯誤狀態、按鈕與連結
+globs: src/index.html,src/style.css,src/app.js
+alwaysApply: false
+---
+
+# Trip Viewer UI 約定
+
+## 手機優先與觸控
+
+- 觸控目標至少 44px（`--tap: 44px`），按鈕使用 `min-height: var(--tap)`。
+- 使用 `viewport-fit=cover` 與安全區域，字體 `-webkit-text-size-adjust: 100%`。
+- 按鈕加上 `-webkit-tap-highlight-color: transparent` 避免閃爍。
+
+## 色彩變數
+
+沿用 `style.css` 的 CSS 變數：`--bg`、`--surface`、`--text`、`--muted`、`--accent`、`--btn`、`--btn-text`、`--radius`。新增樣式時使用變數，勿寫死色碼。
+
+## 載入與錯誤狀態
+
+- 資料載入前：在 `#app` 內顯示載入中提示（例如「載入行程中…」），避免空白畫面。
+- 載入失敗：顯示明確錯誤訊息與可重試按鈕，勿靜默失敗。
+- 實作方式：`loadData()` 在 init 時先顯示 loading，完成後隱藏並渲染；catch 時顯示 error 區塊。
+
+## 地點按鈕與連結
+
+- 開啟地圖按鈕統一使用 class `btn-maps`，`data-url` 存 Google Maps URL，點擊呼叫 `openMaps(url)`。
+- 內文中的地點連結使用 class `place-link`，`target="_blank"`、`rel="noopener"`。
+- `escapeHtml` 僅對 `<`、`>`、`&`、`"` 跳脫；`linkifyPlaceNames` 將地點名替換為 `<a href="..." class="place-link">...</a>`。
+
+## 無障礙
+
+- 分頁使用 `role="tablist"`、`role="tab"`、`aria-selected`，主內容與備忘切換使用 `aria-label`。
+- 動態插入的區塊可加 `aria-live="polite"` 供讀屏更新。

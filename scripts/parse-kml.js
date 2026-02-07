@@ -97,5 +97,6 @@ export function getDefaultKmlPaths(sourceDir) {
   return [
     path.join(base, '曼谷成人行程_地圖_1_基礎.kml'),
     path.join(base, '曼谷成人行程_地圖_2_三條路線.kml'),
+    path.join(base, '曼谷成人行程_地圖.kml'),
   ];
 }

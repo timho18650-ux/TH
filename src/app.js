@@ -204,17 +204,84 @@
     });
   }
 
+  function setLoading(show) {
+    var loading = document.getElementById('loading');
+    var error = document.getElementById('error');
+    var header = document.getElementById('app-header');
+    var body = document.getElementById('app-body');
+    if (loading) loading.hidden = !show;
+    if (error) error.hidden = true;
+    if (header) header.hidden = show;
+    if (body) body.hidden = show;
+  }
+
+  function setError(show) {
+    var loading = document.getElementById('loading');
+    var error = document.getElementById('error');
+    var header = document.getElementById('app-header');
+    var body = document.getElementById('app-body');
+    if (loading) loading.hidden = true;
+    if (error) error.hidden = !show;
+    if (header) header.hidden = show;
+    if (body) body.hidden = show;
+  }
+
+  function setContentVisible() {
+    var loading = document.getElementById('loading');
+    var error = document.getElementById('error');
+    var header = document.getElementById('app-header');
+    var body = document.getElementById('app-body');
+    if (loading) loading.hidden = true;
+    if (error) error.hidden = true;
+    if (header) header.hidden = false;
+    if (body) body.hidden = false;
+  }
+
+  function doRender() {
+    renderTitle();
+    renderReserved();
+    renderDayContent();
+    renderRouteContent();
+    renderPlaces();
+    renderGuides();
+  }
+
   function init() {
-    loadData().then(function (r) {
-      data.itinerary = r.itinerary;
-      data.places = r.places || [];
-      renderTitle();
-      renderReserved();
-      renderDayContent();
-      renderRouteContent();
-      renderPlaces();
-      renderGuides();
-    });
+    if (window.__TRIP_DATA__) {
+      setContentVisible();
+      data.itinerary = window.__TRIP_DATA__.itinerary;
+      data.places = window.__TRIP_DATA__.places || [];
+      doRender();
+    } else {
+      setLoading(true);
+      loadData()
+        .then(function (r) {
+          data.itinerary = r.itinerary;
+          data.places = r.places || [];
+          setContentVisible();
+          doRender();
+        })
+        .catch(function () {
+          setError(true);
+        });
+    }
+
+    var retryBtn = document.getElementById('retry-btn');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function () {
+        setLoading(true);
+        loadData()
+          .then(function (r) {
+            data.itinerary = r.itinerary;
+            data.places = r.places || [];
+            setContentVisible();
+            doRender();
+          })
+          .catch(function () {
+            setError(true);
+          });
+      });
+    }
 
     document.querySelectorAll('.main-tabs .main-tab').forEach(function (btn) {
       btn.addEventListener('click', function () { setMainView(btn.getAttribute('data-main')); });

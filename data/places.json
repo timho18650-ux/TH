@@ -727,5 +727,311 @@
     "lng": 100.548,
     "description": "Day 4 上午 Soapy",
     "googleMapsUrl": "https://www.google.com/maps?q=13.736,100.548"
+  },
+  {
+    "id": "kml-酒店與餐廳-0",
+    "name": "The Westin Grande Sukhumvit",
+    "category": "酒店與餐廳",
+    "lat": 13.7388,
+    "lng": 100.5601,
+    "description": "入住 2/26-3/1，Deluxe Room 含早 介紹連結： 繁中－Booking | 簡中－Booking | EN－TripAdvisor",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7388,100.5601"
+  },
+  {
+    "id": "kml-酒店與餐廳-1",
+    "name": "Copper Beyond Buffet",
+    "category": "酒店與餐廳",
+    "lat": 13.7465,
+    "lng": 100.5405,
+    "description": "2/26 19:30 已預訂｜ Google Maps",
+    "googleMapsUrl": "https://www.google.com/maps/search/Copper+Beyond+Buffet+Gaysorn+Amarin+Bangkok"
+  },
+  {
+    "id": "kml-酒店與餐廳-2",
+    "name": "Chim by Siam Wisdom",
+    "category": "酒店與餐廳",
+    "lat": 13.775,
+    "lng": 100.51,
+    "description": "2/27 12:30 已預訂｜ Google Maps",
+    "googleMapsUrl": "https://www.google.com/maps/search/Chim+by+Siam+Wisdom+Bangkok"
+  },
+  {
+    "id": "kml-日按與Soapy-3",
+    "name": "Soi 24 日按集中區",
+    "category": "日按與Soapy",
+    "lat": 13.728,
+    "lng": 100.569,
+    "description": "Addict、Doki Doki、Momo、Paradise 介紹連結： 繁中－風俗攻略 | EN－Addict 介紹",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.728,100.569"
+  },
+  {
+    "id": "kml-日按與Soapy-4",
+    "name": "Soi 26 日按集中區",
+    "category": "日按與Soapy",
+    "lat": 13.725,
+    "lng": 100.572,
+    "description": "102、Bamboo、Angel、Pretty 介紹連結： 繁中－風俗攻略 | EN－Bamboo 介紹",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.725,100.572"
+  },
+  {
+    "id": "kml-日按與Soapy-5",
+    "name": "Eden Club (Soi 7/1)",
+    "category": "日按與Soapy",
+    "lat": 13.742,
+    "lng": 100.5535,
+    "description": "幻想服務、雙飛聞名；12:30-24:00，周一休息 介紹連結： 繁中／EN－Eden 攻略 | EN－TripAdvisor",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.742,100.5535"
+  },
+  {
+    "id": "kml-日按與Soapy-6",
+    "name": "Emmanuelle (Soi 2)",
+    "category": "日按與Soapy",
+    "lat": 13.736,
+    "lng": 100.548,
+    "description": "老牌，約 4,500–6,000 銖，外國人加 500 介紹連結： 繁中－泰浴攻略 | 簡中－Emmanuelle 介紹 | EN－Hammer104",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.736,100.548"
+  },
+  {
+    "id": "kml-日按與Soapy-7",
+    "name": "Poseidon (Ratchadaphisek)",
+    "category": "日按與Soapy",
+    "lat": 13.773,
+    "lng": 100.5715,
+    "description": "分級選妃，約 3,500–8,000 銖，Sutthisan MRT 介紹連結： 繁中－Poseidon 波賽頓介紹 | 簡中－Poseidon 傳奇泰浴 | EN－Poseidon 詳情",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.773,100.5715"
+  },
+  {
+    "id": "kml-日按與Soapy-8",
+    "name": "The Lord (Ratchadaphisek)",
+    "category": "日按與Soapy",
+    "lat": 13.774,
+    "lng": 100.572,
+    "description": "中高檔，約 4,500–10,000 銖，出發前建議確認營業 介紹連結： 繁中－泰浴攻略 | 簡中－曼谷泰浴指南 | EN－The Lord 介紹",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.774,100.572"
+  },
+  {
+    "id": "kml-紅燈區-9",
+    "name": "Soi Cowboy",
+    "category": "紅燈區",
+    "lat": 13.7325,
+    "lng": 100.561,
+    "description": "短巷、觀光氣氛較重，約 20 間 Go Go Bar 介紹連結： 繁中－牛仔巷攻略 | 簡中－紅燈區指南 | EN－Bangkok 紅燈區",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7325,100.561"
+  },
+  {
+    "id": "kml-紅燈區-10",
+    "name": "Nana Plaza",
+    "category": "紅燈區",
+    "lat": 13.741,
+    "lng": 100.5532,
+    "description": "三層樓複合式 Gogo Bar，高能量氛圍 介紹連結： 繁中－風俗攻略 | 簡中－曼谷夜生活 | EN－Nana Plaza 指南",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.741,100.5532"
+  },
+  {
+    "id": "kml-紅燈區-11",
+    "name": "Patpong",
+    "category": "紅燈區",
+    "lat": 13.7285,
+    "lng": 100.5315,
+    "description": "夜市＋酒吧並存，謹防宰客與盜版攤 介紹連結： 繁中－風俗攻略 | 簡中－紅燈區指南 | EN－Gogo Bars 攻略",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7285,100.5315"
+  },
+  {
+    "id": "kml-景點-12",
+    "name": "大皇宮 Grand Palace",
+    "category": "景點",
+    "lat": 13.75,
+    "lng": 100.4915,
+    "description": "門票 500 銖，08:30–15:30 介紹連結： 繁中－維基百科 | 簡中－官網 | EN－官網",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.75,100.4915"
+  },
+  {
+    "id": "kml-景點-13",
+    "name": "臥佛寺 Wat Pho",
+    "category": "景點",
+    "lat": 13.7465,
+    "lng": 100.4925,
+    "description": "門票 300 銖，08:00–19:30，距大皇宮約 700m 介紹連結： 繁中－維基百科 | 簡中－攜程攻略 | EN－TripAdvisor",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7465,100.4925"
+  },
+  {
+    "id": "kml-景點-14",
+    "name": "ICONSIAM",
+    "category": "景點",
+    "lat": 13.7265,
+    "lng": 100.512,
+    "description": "免費入場，10:00–22:00，河畔 10 層商場 介紹連結： 繁中－維基百科 | 簡中－官網 | EN－官網",
+    "googleMapsUrl": "https://www.google.com/maps?q=13.7265,100.512"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-15",
+    "name": "7SEVEN Spa And Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.732,
+    "lng": 100.558,
+    "description": "分類 ：成人按摩店｜Soi 10，近 Asok/Nana BTS 評分 ：4.6★ (77 則評價) 價位 ：約 3,000 銖／60 分鐘 特色 ：環境乾淨、技師年輕，營業 11:00–02:00 口碑 ：網評專業、清潔佳 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/7SEVEN+Spa+And+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-16",
+    "name": "Dragon Heart Nuru Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.735,
+    "lng": 100.557,
+    "description": "分類 ：成人按摩店｜Soi 11，Eden 創辦人設計 評分 ：4.6★ (63 則評價) 價位 ：約 2,000 銖／30 分鐘起；Nuru 約 5,000 銖 特色 ：主題房（Galaxy、Maharaja、Party Room、中日式等）、Jacuzzi、Hostess Club 可先飲酒選妃 口碑 ：高檔、隱密，營業 11:00–03:00 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Dragon+Heart+Nuru+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-17",
+    "name": "Secret Kiss",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.727,
+    "lng": 100.57,
+    "description": "分類 ：成人按摩店 評分 ：4.7★ (57 則評價) 價位 ：視方案而定 特色 ：Erotic massage、BJ bar，可 LINE 預約 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Secret+Kiss+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-18",
+    "name": "EXOTIC Massage Bangkok",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.731,
+    "lng": 100.562,
+    "description": "分類 ：成人按摩店 評分 ：4.8★ (202 則評價) 特色 ：網評高，環境簡約 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/EXOTIC+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-19",
+    "name": "Dozo Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.729,
+    "lng": 100.564,
+    "description": "分類 ：成人按摩店 評分 ：4.3★ (158 則評價) 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Dozo+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-20",
+    "name": "AuroraMassage33 Nuru",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.732,
+    "lng": 100.565,
+    "description": "分類 ：成人按摩店｜Soi 33 評分 ：4.4★ (156 則評價) 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/AuroraMassage33+Nuru+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-21",
+    "name": "Canary Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.73,
+    "lng": 100.565,
+    "description": "分類 ：Nuru／Soapy｜Soi 19，近 Asok 評分 ：4.7★ (220 則評價)｜曼谷 Nuru 排名前茅 價位 ：4,500 銖全包（含服裝、襪） 特色 ：日式 Nuru、情境房（教室、醫院、健身房），專業技師 口碑 ：服務佳、略貴但物有所值，營業 10:00–24:00 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Canary+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-22",
+    "name": "Glamor Massage Bangkok",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.728,
+    "lng": 100.575,
+    "description": "分類 ：按摩水療｜Soi 31 評分 ：4.6★ (116 則評價) 價位 ：Standard 2,000 銖／40 分鐘；Gorgeous 2,500–4,500；Exclusive/Sky 3,500–5,500 銖 特色 ：摩洛哥風裝潢、Sky 房落地窗＋星空效果、海藻 Nuru 凝膠 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Glamor+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-23",
+    "name": "Hunny Bunny BKK",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.732,
+    "lng": 100.565,
+    "description": "分類 ：香薰／Nuru｜Soi 33，近 Phrom Phong 評分 ：4.7★ (92 則評價) 價位 ：標準房 1,900–2,800 銖（40–120 分鐘）；Jacuzzi 2,000–3,300；主題房 3,500–5,500 特色 ：主題房（Ice、Amazon、Victorian、Karaoke、Genie、Angel） 口碑 ：房間乾淨、服務友善、預約順暢，營業 08:00–24",
+    "googleMapsUrl": "https://www.google.com/maps/search/Hunny+Bunny+BKK"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-24",
+    "name": "Toro Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.734,
+    "lng": 100.56,
+    "description": "分類 ：按摩水療 評分 ：4.6★ (29 則評價) 特色 ：裝潢現代簡潔 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Toro+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-25",
+    "name": "Aurora Bangkok",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.73,
+    "lng": 100.563,
+    "description": "分類 ：按摩水療 評分 ：4.3★ (117 則評價) 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Aurora+Bangkok+Massage"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-26",
+    "name": "Kitty Spa RCA",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.778,
+    "lng": 100.601,
+    "description": "分類 ：成人按摩店｜RCA 區 評分 ：3.8★ (53 則評價) 特色 ：芳香療法、Kasai 按摩，營業 11:00–03:30 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Kitty+Spa+RCA+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-27",
+    "name": "PSYCHE DREAM SPA",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.778,
+    "lng": 100.601,
+    "description": "分類 ：成人按摩店｜RCA，角色扮演 SPA 評分 ：4.8★ (77 則評價) 特色 ：泰國首創沉浸式角色扮演，6 種情境（護士、健身教練、教室、女宿舍、頭等艙、監獄），強調劇情互動與隱私 口碑 ：獨特體驗、多語系（英中日韓） 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/PSYCHE+DREAM+SPA+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-28",
+    "name": "Bonnie RCA",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.778,
+    "lng": 100.601,
+    "description": "分類 ：成人按摩店｜RCA 區 評分 ：4.3★ (15 則評價) 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Bonnie+RCA+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-29",
+    "name": "Magic Massage",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.733,
+    "lng": 100.558,
+    "description": "分類 ：成人按摩店｜ 永久歇業 評分 ：4.4★ (14 則評價) 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Magic+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-30",
+    "name": "Tara Bangkok",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.773,
+    "lng": 100.571,
+    "description": "分類 ：อาบ อบ นวด（Soapy）｜Ratchada 評分 ：4.3★ (240 則評價) 特色 ：「曼谷最頂級 Soapy」、Lounge 選妃（無魚缸）、Jacuzzi／Sauna／蒸氣、餐廳、酒吧、現場樂隊，40–50 位技師 口碑 ：高檔紳士 SPA，複合娛樂 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Tara+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-31",
+    "name": "Black Caviar Executive Club",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.774,
+    "lng": 100.572,
+    "description": "分類 ：อาบ อบ นวด｜Ratchada Din Daeng 評分 ：4.2★ (90 則評價) 價位 ：會員制 30,000／50,000／100,000 銖 特色 ：邀請制、VIP 主題房、Karaoke、現場樂隊、Lobby Bar、 fine dining（魚子醬、紅酒） 口碑 ：奢華、會員制，營業 12:00–24:00 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Black+Caviar+Executive+Club+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-32",
+    "name": "Maria Massage Bangkok",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.739,
+    "lng": 100.555,
+    "description": "分類 ：成人俱樂部 評分 ：3.7★ (150 則評價) 特色 ：綠色霓虹外觀、夜間街道景 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/Maria+Massage+Bangkok"
+  },
+  {
+    "id": "kml-他人推薦（日按Soapy俱樂部）-33",
+    "name": "The Dollhouse",
+    "category": "他人推薦（日按Soapy俱樂部）",
+    "lat": 13.732,
+    "lng": 100.561,
+    "description": "分類 ：成人俱樂部｜消費等級 $$ 評分 ：4.3★ (143 則評價) 特色 ：紅綠霓虹、室內酒吧氛圍 查看圖片與詳細資訊",
+    "googleMapsUrl": "https://www.google.com/maps/search/The+Dollhouse+Bangkok"
   }
 ]
