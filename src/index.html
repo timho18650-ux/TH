@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <title>行程｜曼谷</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1 id="title">行程</h1>
+      <p id="subtitle" class="subtitle"></p>
+    </header>
+
+    <nav class="tabs day-tabs" role="tablist" aria-label="日次">
+      <button type="button" class="tab" data-day="0" role="tab" aria-selected="true">全部</button>
+      <button type="button" class="tab" data-day="1" role="tab">Day 1</button>
+      <button type="button" class="tab" data-day="2" role="tab">Day 2</button>
+      <button type="button" class="tab" data-day="3" role="tab">Day 3</button>
+      <button type="button" class="tab" data-day="4" role="tab">Day 4</button>
+    </nav>
+
+    <nav class="tabs route-tabs" role="tablist" aria-label="路線">
+      <button type="button" class="tab route-tab" data-route="A" role="tab">路線 A</button>
+      <button type="button" class="tab route-tab" data-route="B" role="tab">路線 B</button>
+      <button type="button" class="tab route-tab" data-route="C" role="tab">路線 C</button>
+    </nav>
+
+    <section class="reserved" id="reserved" aria-label="已預訂"></section>
+
+    <section class="content">
+      <div id="day-content"></div>
+      <div id="route-content"></div>
+      <div id="places-section">
+        <h2>地點</h2>
+        <div id="places-filters"></div>
+        <ul id="places-list"></ul>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

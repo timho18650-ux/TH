@@ -1,0 +1,13 @@
+{
+  "name": "trip-viewer",
+  "version": "1.0.0",
+  "description": "離線行程檢視：從 Markdown + KML 建置手機友善單頁，一鍵開地圖。",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:single": "node scripts/build.js --single"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.2"
+  }
+}
