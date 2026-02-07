@@ -36,7 +36,7 @@ npm run build:single
 
 將 `dist/` 部署到 Vercel、Netlify 或 GitHub Pages。手機開該網址，首次載入後 PWA 會快取，之後可離線瀏覽。
 
-**Vercel / 從 GitHub 部署**：建置機沒有你的行程檔（如 `C:\TH`），`npm run build` 會改為輸出空白資料，建置會通過、網站可開但內容為空。若要線上顯示**真實行程**：在本機設好 `TRIP_SOURCE` 並執行 `npm run build`，再將整個 `dist` 資料夾部署（例如 Vercel 專案設 Output Directory 為 `dist`，並改為本機 `vercel` 部署該資料夾）。
+**Vercel / 從 GitHub 部署**：建置時會優先使用 repo 裡的 `data/itinerary.json` 與 `data/places.json`（若存在）。因此只要把建好的 JSON 放進 `data/` 並 push，Vercel 就會顯示真實行程。本機若有行程來源（如 `C:\TH`），執行 `npm run build` 會自動寫入 `data/`，再 `git add data/`、`git commit`、`git push` 即可更新線上內容。
 
 ### 方式二：單檔傳到手機
 
