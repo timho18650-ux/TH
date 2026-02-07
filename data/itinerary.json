@@ -1,0 +1,627 @@
+{
+  "title": "曼谷 4 天成人混合行程規劃",
+  "flights": [
+    {
+      "direction": "去程",
+      "date": "2/26（四）",
+      "flight": "CX 717",
+      "depart": "09:10 香港",
+      "arrive": "11:15 曼谷"
+    },
+    {
+      "direction": "回程",
+      "date": "3/1（日）",
+      "flight": "CX 708",
+      "depart": "17:40 曼谷",
+      "arrive": "21:30 香港"
+    }
+  ],
+  "hotel": {
+    "name": "The Westin Grande Sukhumvit, Bangkok",
+    "checkIn": "2026/2/26",
+    "checkOut": "2026/3/1（3 晚）",
+    "roomType": "Deluxe Room (1 King Bed, City View)，含早餐"
+  },
+  "reservedRestaurants": [
+    {
+      "date": "2/26",
+      "time": "19:30",
+      "name": "Copper Beyond Buffet",
+      "note": "晚餐"
+    },
+    {
+      "date": "2/27",
+      "time": "12:30",
+      "name": "Chim by Siam Wisdom",
+      "note": "午餐（米其林星級泰菜）"
+    }
+  ],
+  "placesFromMd": [
+    {
+      "name": "The Westin Grande Sukhumvit",
+      "category": "酒店",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/The+Westin+Grande+Sukhumvit+Bangkok"
+    },
+    {
+      "name": "Soi 24, Sukhumvit",
+      "category": "日按集中區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Sukhumvit+Soi+24+Bangkok"
+    },
+    {
+      "name": "Soi 26, Sukhumvit",
+      "category": "日按集中區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Sukhumvit+Soi+26+Bangkok"
+    },
+    {
+      "name": "Soi 33, Sukhumvit",
+      "category": "日按區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Sukhumvit+Soi+33+Bangkok"
+    },
+    {
+      "name": "Addict Massage",
+      "category": "日按",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Addict+Soi+24+Bangkok"
+    },
+    {
+      "name": "Doki Doki",
+      "category": "日按",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Doki+Doki+Soi+24+Bangkok"
+    },
+    {
+      "name": "102 Massage",
+      "category": "日按",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/102+Soi+26+Bangkok"
+    },
+    {
+      "name": "Eden Club",
+      "category": "日按／幻想服務",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Eden+Club+Soi+7+1+Bangkok"
+    },
+    {
+      "name": "Soi Cowboy",
+      "category": "紅燈區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Soi+Cowboy+Bangkok"
+    },
+    {
+      "name": "Nana Plaza",
+      "category": "紅燈區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Nana+Plaza+Bangkok"
+    },
+    {
+      "name": "Patpong",
+      "category": "紅燈區",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Patpong+Bangkok"
+    },
+    {
+      "name": "Emmanuelle",
+      "category": "Soapy",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Emmanuelle+Soi+2+Bangkok"
+    },
+    {
+      "name": "Poseidon",
+      "category": "Soapy",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Poseidon+Ratchadaphisek+Bangkok"
+    },
+    {
+      "name": "The Lord",
+      "category": "Soapy",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/The+Lord+Ratchadaphisek+Bangkok"
+    },
+    {
+      "name": "Copper Beyond Buffet (Gaysorn Amarin)",
+      "category": "已預訂餐廳",
+      "reservedTime": "2/26 19:30",
+      "googleMapsUrl": "https://www.google.com/maps/search/Copper+Beyond+Buffet+Gaysorn+Amarin+Bangkok"
+    },
+    {
+      "name": "Chim by Siam Wisdom",
+      "category": "已預訂餐廳",
+      "reservedTime": "2/27 12:30",
+      "googleMapsUrl": "https://www.google.com/maps/search/Chim+by+Siam+Wisdom+Bangkok"
+    },
+    {
+      "name": "7-Eleven Sukhumvit Asok",
+      "category": "採購",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/7-Eleven+Sukhumvit+Asok+Bangkok"
+    },
+    {
+      "name": "Boots Terminal 21",
+      "category": "採購",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Boots+Terminal+21+Bangkok"
+    },
+    {
+      "name": "Watsons EmQuartier",
+      "category": "採購",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Watsons+EmQuartier+Bangkok"
+    },
+    {
+      "name": "大皇宮",
+      "category": "景點",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Grand+Palace+Bangkok"
+    },
+    {
+      "name": "臥佛寺",
+      "category": "景點",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/Wat+Pho+Bangkok"
+    },
+    {
+      "name": "ICONSIAM",
+      "category": "景點",
+      "reservedTime": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/ICONSIAM+Bangkok"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2/26",
+      "title": "抵達＋文化＋都會休閒",
+      "slots": [
+        {
+          "time": "上午",
+          "activity": "香港出發（CX 717 09:10）",
+          "note": "抵達曼谷 11:15，入境後前往酒店"
+        },
+        {
+          "time": "中午",
+          "activity": "酒店 Check-in、午飯",
+          "note": "Westin Grande Sukhumvit 鄰近 BTS Asok"
+        },
+        {
+          "time": "下午",
+          "activity": "大皇宮、臥佛寺或鄭王廟",
+          "note": "選 1–2 個景點即可；或改逛 ICONSIAM／暹羅商圈"
+        },
+        {
+          "time": "傍晚",
+          "activity": "高空酒吧體驗",
+          "note": "Vertigo (Banyan Tree)、Octave、或 Red Sky"
+        },
+        {
+          "time": "晚上 19:30",
+          "activity": "Copper Beyond Buffet（已預訂）",
+          "note": "晚餐＋輕微夜生活預熱"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2/27",
+      "title": "日按＋紅燈區初探",
+      "slots": [
+        {
+          "time": "上午",
+          "activity": "日按（Soi 24／26 或 Addict、Doki Doki 等）",
+          "note": "2,500–4,000 銖／次"
+        },
+        {
+          "time": "中午 12:30",
+          "activity": "Chim by Siam Wisdom（已預訂）",
+          "note": "午餐"
+        },
+        {
+          "time": "下午",
+          "activity": "午休或素坤逸區咖啡廳",
+          "note": "EmQuartier、Terminal 21"
+        },
+        {
+          "time": "傍晚",
+          "activity": "Soi Cowboy",
+          "note": "短巷、氛圍輕鬆、可純觀光"
+        },
+        {
+          "time": "晚上",
+          "activity": "Nana Plaza 或牛仔巷酒吧",
+          "note": "先走一圈觀察，不一定要進店"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2/28",
+      "title": "日按＋夜生活深入",
+      "slots": [
+        {
+          "time": "上午",
+          "activity": "睡晚一點或第二攤日按",
+          "note": "Soi 24／26、或 102 之類"
+        },
+        {
+          "time": "下午",
+          "activity": "午休、米其林或街頭小吃",
+          "note": "Jay Fai、nahm、或河畔 fine dining"
+        },
+        {
+          "time": "傍晚",
+          "activity": "河畔酒吧或 Sky Bar",
+          "note": "看夕陽＋小酌"
+        },
+        {
+          "time": "晚上",
+          "activity": "Patpong、Nana 或 RCA",
+          "note": "紅燈區深入、帶出場或夜店"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "3/1",
+      "title": "日按＋收尾",
+      "slots": [
+        {
+          "time": "上午",
+          "activity": "最後一攤日按或傳統 SPA",
+          "note": "收心按摩、伴手禮"
+        },
+        {
+          "time": "中午",
+          "activity": "飯店附近午餐",
+          "note": "約 13:00 前完成"
+        },
+        {
+          "time": "下午",
+          "activity": "前往機場",
+          "note": "14:30 前出發，CX 708 17:40 起飛"
+        }
+      ]
+    }
+  ],
+  "routes": {
+    "A": {
+      "title": "高評分路線（主攻 4.7★ 以上口碑店）",
+      "rows": [
+        {
+          "日": "Day 1",
+          "時段": "上午",
+          "行程": "香港出發",
+          "店家／備註": "CX 717 抵達 11:15"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "酒店 Check-in、午飯",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "景點",
+          "店家／備註": "大皇宮、臥佛寺或 ICONSIAM"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "高空酒吧",
+          "店家／備註": "Vertigo／Octave"
+        },
+        {
+          "日": "",
+          "時段": "19:30",
+          "行程": "Copper Beyond Buffet（已預訂）",
+          "店家／備註": "晚餐"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區初探",
+          "店家／備註": "Nana Plaza 純觀光"
+        },
+        {
+          "日": "Day 2",
+          "時段": "上午",
+          "行程": "日按",
+          "店家／備註": "EXOTIC Massage（4.8★）或 Canary Massage（4.7★）"
+        },
+        {
+          "日": "",
+          "時段": "12:30",
+          "行程": "Chim by Siam Wisdom（已預訂）",
+          "店家／備註": "午餐"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "午休、咖啡廳",
+          "店家／備註": "EmQuartier、Terminal 21"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "日按",
+          "店家／備註": "Secret Kiss（4.7★）或 Hunny Bunny（4.7★）"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區",
+          "店家／備註": "Soi Cowboy、The Dollhouse（4.3★）"
+        },
+        {
+          "日": "Day 3",
+          "時段": "上午",
+          "行程": "日按",
+          "店家／備註": "PSYCHE DREAM SPA（4.8★，RCA 角色扮演）"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "米其林／街頭小吃",
+          "店家／備註": "Jay Fai 或河畔 fine dining"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "河畔酒吧",
+          "店家／備註": "看夕陽"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區帶出場",
+          "店家／備註": "Nana Plaza（推薦 Billboard、Spanky's）"
+        },
+        {
+          "日": "Day 4",
+          "時段": "上午",
+          "行程": "日按收尾",
+          "店家／備註": "Glamor Massage（4.6★）或 Aurora Bangkok（4.3★）"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "飯店附近午餐",
+          "店家／備註": "約 13:00 前"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "前往機場",
+          "店家／備註": "CX 708 17:40 起飛"
+        },
+        {
+          "日": "Day 1",
+          "時段": "上午",
+          "行程": "香港出發",
+          "店家／備註": "CX 717 抵達 11:15"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "酒店 Check-in、午飯",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "景點",
+          "店家／備註": "大皇宮、臥佛寺或 ICONSIAM"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "高空酒吧",
+          "店家／備註": "Vertigo／Octave"
+        },
+        {
+          "日": "",
+          "時段": "19:30",
+          "行程": "Copper Beyond Buffet（已預訂）",
+          "店家／備註": "晚餐"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區初探",
+          "店家／備註": "Soi Cowboy 純觀光"
+        },
+        {
+          "日": "Day 2",
+          "時段": "上午",
+          "行程": "日按",
+          "店家／備註": "7SEVEN Spa（約 3,000 銖／60 分鐘）或 Dragon Heart（2,000 銖／30 分鐘起）"
+        },
+        {
+          "日": "",
+          "時段": "12:30",
+          "行程": "Chim by Siam Wisdom（已預訂）",
+          "店家／備註": "午餐"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "午休、Terminal 21",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "日按",
+          "店家／備註": "Hunny Bunny（1,900 銖起）或 Addict（約 2,000 銖）"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區",
+          "店家／備註": "Nana Plaza 探路"
+        },
+        {
+          "日": "Day 3",
+          "時段": "上午",
+          "行程": "日按",
+          "店家／備註": "Dozo（4.3★）或 AuroraMassage33（4.4★）"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "街頭小吃、按摩",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "河畔酒吧",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區帶出場",
+          "店家／備註": "Soi Cowboy（Crazy House、Long Gun）"
+        },
+        {
+          "日": "Day 4",
+          "時段": "上午",
+          "行程": "傳統 SPA 或日按",
+          "店家／備註": "Let's Relax、Health Land 或 Toro Massage"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "飯店附近午餐",
+          "店家／備註": "約 13:00 前"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "前往機場",
+          "店家／備註": "CX 708 17:40 起飛"
+        },
+        {
+          "日": "Day 1",
+          "時段": "上午",
+          "行程": "香港出發",
+          "店家／備註": "CX 717 抵達 11:15"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "酒店 Check-in、午飯",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "景點",
+          "店家／備註": "大皇宮、臥佛寺或 ICONSIAM"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "高空酒吧",
+          "店家／備註": "Vertigo／Octave"
+        },
+        {
+          "日": "",
+          "時段": "19:30",
+          "行程": "Copper Beyond Buffet（已預訂）",
+          "店家／備註": "晚餐"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區初探",
+          "店家／備註": "Nana Plaza 純觀光"
+        },
+        {
+          "日": "Day 2",
+          "時段": "上午",
+          "行程": "Soapy",
+          "店家／備註": "Tara Bangkok（4.3★，Ratchada 高檔）或 Poseidon"
+        },
+        {
+          "日": "",
+          "時段": "12:30",
+          "行程": "Chim by Siam Wisdom（已預訂）",
+          "店家／備註": "午餐"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "午休",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "日按（主題房）",
+          "店家／備註": "Dragon Heart（Galaxy、Party Room 等）"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區",
+          "店家／備註": "Nana Plaza"
+        },
+        {
+          "日": "Day 3",
+          "時段": "上午",
+          "行程": "Soapy／日按",
+          "店家／備註": "Canary Massage（情境房）或 Glamor（Sky 房）"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "米其林／河畔",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "傍晚",
+          "行程": "河畔酒吧",
+          "店家／備註": "—"
+        },
+        {
+          "日": "",
+          "時段": "晚上",
+          "行程": "紅燈區帶出場",
+          "店家／備註": "Nana Plaza 或 The Dollhouse"
+        },
+        {
+          "日": "Day 4",
+          "時段": "上午",
+          "行程": "Soapy 收尾",
+          "店家／備註": "Black Caviar（會員制）或 Emmanuelle"
+        },
+        {
+          "日": "",
+          "時段": "中午",
+          "行程": "飯店附近午餐",
+          "店家／備註": "約 13:00 前"
+        },
+        {
+          "日": "",
+          "時段": "下午",
+          "行程": "前往機場",
+          "店家／備註": "CX 708 17:40 起飛"
+        }
+      ]
+    },
+    "B": {
+      "title": "",
+      "rows": []
+    },
+    "C": {
+      "title": "",
+      "rows": []
+    }
+  }
+}
