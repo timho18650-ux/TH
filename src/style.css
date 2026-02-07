@@ -243,6 +243,50 @@ body {
   color: #9dd;
 }
 
+/* 心得／備忘分頁 */
+.main-tabs {
+  margin-bottom: 8px;
+}
+
+.guides-panel {
+  margin-top: 12px;
+  padding-bottom: 24px;
+}
+
+.guide-block {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--surface);
+}
+
+.guide-block:last-child {
+  border-bottom: none;
+}
+
+.guide-title {
+  font-size: 1.15rem;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.guide-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.guide-body h2 { font-size: 1.1rem; margin: 16px 0 8px; }
+.guide-body h3 { font-size: 1rem; margin: 14px 0 6px; }
+.guide-body h4 { font-size: 0.95rem; margin: 12px 0 4px; }
+.guide-body p { margin: 0 0 10px; }
+.guide-body ul, .guide-body ol { margin: 0 0 10px; padding-left: 1.4em; }
+.guide-body li { margin-bottom: 4px; }
+.guide-body table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.9rem; }
+.guide-body th, .guide-body td { padding: 8px 6px; border: 1px solid var(--surface); text-align: left; }
+.guide-body th { color: var(--muted); }
+.guide-body strong { font-weight: 600; }
+.guide-body a { color: #7eb8da; text-decoration: underline; }
+.guide-body a:hover { color: #9dd; }
+
 @media (min-width: 480px) {
   #app {
     padding: 0 20px 32px;

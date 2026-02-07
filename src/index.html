@@ -14,6 +14,12 @@
       <p id="subtitle" class="subtitle"></p>
     </header>
 
+    <nav class="tabs main-tabs" role="tablist" aria-label="主分頁">
+      <button type="button" class="tab main-tab active" data-main="itinerary" role="tab" aria-selected="true">行程</button>
+      <button type="button" class="tab main-tab" data-main="guides" role="tab">心得／備忘</button>
+    </nav>
+
+    <div id="main-content">
     <nav class="tabs day-tabs" role="tablist" aria-label="日次">
       <button type="button" class="tab" data-day="0" role="tab" aria-selected="true">全部</button>
       <button type="button" class="tab" data-day="1" role="tab">Day 1</button>
@@ -38,6 +44,11 @@
         <div id="places-filters"></div>
         <ul id="places-list"></ul>
       </div>
+    </section>
+    </div>
+
+    <section id="guides-content" class="guides-panel" hidden aria-label="心得備忘">
+      <div id="guides-list"></div>
     </section>
   </div>
   <script src="app.js"></script>

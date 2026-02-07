@@ -1,12 +1,25 @@
 /**
  * 解析行程 Markdown，產出結構化 itinerary JSON。
- * 讀取 UTF-8 檔案，輸出：航班、酒店摘要、已預訂餐廳、Day 1–4、路線 A/B/C、地點表（含 Google Maps 連結）。
+ * 讀取 UTF-8 檔案，輸出：航班、酒店摘要、已預訂餐廳、Day 1–4、路線 A/B/C、地點表、心得章節（guides）。
  */
 
 import fs from 'fs';
 import path from 'path';
+import { marked } from 'marked';
 
 const UTF8 = 'utf8';
+
+const GUIDE_SECTION_TITLES = [
+  '行前準備',
+  '安全套與輔助品採購指引',
+  '成人按摩／色情服務詳盡分析',
+  '景點詳盡資訊（門票、開放時間）',
+  '紅燈區注意事項',
+];
+
+function slug(title) {
+  return title.replace(/\s+/g, '-').replace(/[（）／]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
 
 function parseTableRows(text) {
   const rows = [];
@@ -68,6 +81,7 @@ export function parseItineraryMd(mdPath) {
     placesFromMd: [],
     days: [],
     routes: { A: { title: '', rows: [] }, B: { title: '', rows: [] }, C: { title: '', rows: [] } },
+    guides: [],
   };
 
   for (const block of sections) {
@@ -173,6 +187,20 @@ export function parseItineraryMd(mdPath) {
     if (/## Day 4（3\/1）/.test(block)) {
       const rows = parseTableRows(block);
       result.days.push({ day: 4, date: '3/1', title: '日按＋收尾', slots: rows.map((r) => ({ time: r['時段'] ?? '', activity: r['行程'] ?? '', note: r['備註'] ?? '' })) });
+    }
+  }
+
+  for (const title of GUIDE_SECTION_TITLES) {
+    const block = sections.find((s) => {
+      const first = s.split(/\n/)[0].trim();
+      return first === '## ' + title || first.startsWith('## ' + title + '\n');
+    });
+    if (block) {
+      result.guides.push({
+        id: slug(title),
+        title,
+        html: marked.parse(block.trim()),
+      });
     }
   }
 

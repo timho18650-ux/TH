@@ -11,7 +11,7 @@
     });
   }
 
-  var state = { day: 0, route: 'A', placeCategory: '' };
+  var state = { day: 0, route: 'A', placeCategory: '', mainView: 'itinerary' };
   var data = { itinerary: null, places: [] };
 
   function openMaps(url) {
@@ -183,6 +183,27 @@
     renderRouteContent();
   }
 
+  function renderGuides() {
+    var container = document.getElementById('guides-list');
+    if (!container || !data.itinerary || !data.itinerary.guides || !data.itinerary.guides.length) return;
+    container.innerHTML = data.itinerary.guides.map(function (g) {
+      return '<article class="guide-block" id="guide-' + (g.id || '') + '"><h2 class="guide-title">' + escapeHtml(g.title || '') + '</h2><div class="guide-body">' + (g.html || '') + '</div></article>';
+    }).join('');
+  }
+
+  function setMainView(view) {
+    state.mainView = view;
+    var mainEl = document.getElementById('main-content');
+    var guidesEl = document.getElementById('guides-content');
+    if (mainEl) mainEl.hidden = view !== 'itinerary';
+    if (guidesEl) guidesEl.hidden = view !== 'guides';
+    document.querySelectorAll('.main-tabs .main-tab').forEach(function (t) {
+      var isActive = t.getAttribute('data-main') === view;
+      t.classList.toggle('active', isActive);
+      t.setAttribute('aria-selected', isActive);
+    });
+  }
+
   function init() {
     loadData().then(function (r) {
       data.itinerary = r.itinerary;
@@ -192,8 +213,12 @@
       renderDayContent();
       renderRouteContent();
       renderPlaces();
+      renderGuides();
     });
 
+    document.querySelectorAll('.main-tabs .main-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () { setMainView(btn.getAttribute('data-main')); });
+    });
     document.querySelectorAll('.day-tabs .tab').forEach(function (btn) {
       btn.addEventListener('click', function () { setDay(parseInt(btn.getAttribute('data-day'), 10)); });
     });
@@ -203,6 +228,7 @@
 
     setDay(0);
     setRoute('A');
+    setMainView('itinerary');
   }
 
   if ('serviceWorker' in navigator) {
